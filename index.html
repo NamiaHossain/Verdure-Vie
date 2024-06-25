@@ -28,9 +28,9 @@
   <!-- Add your site or application content here -->
 
 <header>
-  <div>
+  <div class="content-wrapper">
     <a href="#"><img src="./img/logo.jpg" height="400",width="200"alt="Verdure vie logo"></a>
-    
+    <div class="header-divider"></div>
     <nav>
          <ul>
              <li><a href="faq/index.html" rel="noopener">FAQ</a></li>
@@ -40,7 +40,8 @@
   </div>
 </header>
 <main>  <!-- main wrapper -->
-  <section>
+  <section class="hero-area">
+  <div class="content-wrapper">
     <div class="px-4 pt-5 my-5 text-center border-bottom"><!--Start of bootstrap hero-->
       <h1 class="display-4 fw-bold text-body-emphasis">Vendure Vie</h1>
       <div class="col-lg-6 mx-auto">
@@ -56,29 +57,45 @@
         </div>
       </div>
     </div><!--End of bootstrap hero-->
+  </div>
   </section>
   <aside>
-    <div class="signup"> <!----step 6 of 10, asign a div in aside section--->
-    <input type="text" name="name" value="email address">
-  <input type="button" value="Download Itinerary">
+    
+    <div class="content-wrapper"> <!----step 6 of 10, asign a div in aside section--->
+      <div class="form-description">
+        <h3>Get 20% off on your first order when you subscribe via E-mail</h3>
+        <p>Enjoy a welcoming 20% discount on your very first purchase at Verdure Vie.Don't miss out, this discount is only valid for new customers.</p>
+        <input type="text" name="name" value="email address">
+        <input type="button" value="Get 20% off">
+      </div>
     </div>
   </aside>
 </main> <!-- main wrapper -->
 <footer>
   <div class="content-wrapper">
-    <div class="footer-contact">
+    <div class="footer-content">
         <div class="contact">
+          <h4>Contact</h4>
+
           <address>
+            <p>555-555-5555</p></address><br>
+                hello@verdurevie.com
+            </p>
           </address>
         </div>
         <div class="social">
-            <p><a href="https://www.facebook.com/yoursite" target="_blank" rel="noopener"></a></p>
+          <h4>Social</h4>
+          <div class="social-icons">
+            <p>
+              <a href="https://www.facebook.com/yoursite" target="_blank" rel="noopener"></a></p>
             <!-- other social links here -->
-        </div>
+          </div>
+        
     </div> <!-- footer content ends -->
     <div class="copyright">
+      <p>Copyright 2024| Verdure Vie</p>
     </div>
-</div> <!--footer content-wrapper ends--> 
+  </div> <!--footer content-wrapper ends--> 
 </footer>
   
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
