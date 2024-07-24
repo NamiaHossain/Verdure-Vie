@@ -463,8 +463,6 @@ header nav a{
   
   display: flex;
   align-items: center;
-  
-  flex-flow:column wrap;
   flex-basis: 50%;
   
 }
