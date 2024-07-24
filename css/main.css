@@ -125,7 +125,7 @@ header .content-wrapper{
 }
  
 header h1 {
-    width:100%
+    width:50%;
     font-family: "Playwrite NG Modern", cursive;
     font-optical-sizing: auto;
     font-weight:400;
@@ -136,7 +136,7 @@ header h1 {
 
 
 header nav{
-  width:100%;
+  width:50%;
  padding-right: 1.5rem;
 }
   .header-nav{
@@ -155,7 +155,7 @@ header nav a{
 
 
 
-
+/* ----------------HERO----------------*/
 .hero-area{
   display: flex;
   justify-content: center;
@@ -179,6 +179,10 @@ header nav a{
   padding:0 1.5rem;
 
 }
+
+
+
+/*------------FORM------------------*/
 .form{
   background-color: #cfe6d8;
   
@@ -226,19 +230,25 @@ button[type="submit"] {
 
 
 
-/*FEATURES*/
+/*---------------------FEATURES------------------*/
 
 
 
-.features{
+.features-items{
   display: flex;
+  flex-flow: row wrap;
 background-image:url("../img/reviewbackground5.jpg");
 background-repeat: no-repeat;
 background-size: cover;
-  
+
   padding:.5rem 1.5rem;
   padding-bottom: 20px;
 }
+features
+.features-items h2{
+  padding:0.5rem 1.5rem ;
+}
+
 
 
 
@@ -351,6 +361,34 @@ footer {
   padding:10px;
 }
 
+/*=====================MAP ====================*/
+
+.map figure {
+  width: 100%;
+  height: 0; 
+  padding-bottom: 125%; 
+  overflow: hidden;
+  position: relative;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+}
+
+
+
+
+
+
+
+
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -446,10 +484,20 @@ footer {
 }
 
 header h1{
+  font-size: 40px;
   padding:.5rem 1.5rem;
+  width:20%;
 }
 header nav a{
-  padding-left: 20px;
+  width: 20%;
+  padding-left: 10px;
+}
+
+.hero-area p{
+  font-size: 20px;
+  color: rgb(169, 168, 150);
+  
+
 }
 .form {
   display: flex;
@@ -467,9 +515,20 @@ header nav a{
   
 }
 .features article>*{
-  width:50%;
+  width:100%;
   padding:1rem;
 
+}
+
+
+.features-items a{
+  color:white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.outdoor{
+  width:20%;
 }
 
 .about-content{
@@ -498,12 +557,38 @@ header nav a{
   flex: 1; /* Make paragraphs take up equal space */
 }
 
-}
+   }
 
   
    
   @media only screen and (min-width: 1200px) {
     /*Desktop styles here*/
+    
+
+    header h1{
+      font-size: 40px;
+      padding:.5rem 1.5rem;
+      width:320px;
+    }
+    header nav a{
+      width: 200px;
+      padding-left: 10px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   }
 
 
