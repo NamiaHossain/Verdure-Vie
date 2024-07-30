@@ -244,10 +244,19 @@ background-size: cover;
   padding:.5rem 1.5rem;
   padding-bottom: 20px;
 }
-features
-.features-items h2{
+
+h2.features-items {
   padding:0.5rem 1.5rem ;
 }
+p.features-descriptions {
+  font-size: 22px;
+}
+.btn a{
+  color:#ccc;
+  text-decoration: none;
+  font-size: 20px;
+}
+
 
 
 
@@ -322,7 +331,15 @@ features
   
 }
 
+/*========================About===================*/
 
+.about-content{
+  display: flex; /* Make the elements display side-by-side */
+  flex-direction: column; /* Stack elements on top (change to row for side-by-side) */
+  align-items: center; /* Center elements horizontally */
+  margin: 0 auto; /* Center the container horizontally */
+  width: 100%; /* Set a maximum width for the container */
+}
 
 
 
@@ -486,12 +503,22 @@ footer {
 header h1{
   font-size: 40px;
   padding:.5rem 1.5rem;
-  width:20%;
+  width:50%;
 }
+.header-nav{
+  display: flex;
+  justify-content: space-between;
+}
+
 header nav a{
-  width: 20%;
-  padding-left: 10px;
+  font-size: 20px;
+  padding-left:15px;
+  text-decoration: none;
+  color:whitesmoke;
+  
+  
 }
+
 
 .hero-area p{
   font-size: 20px;
@@ -536,9 +563,9 @@ header nav a{
   flex-direction: column; /* Stack elements on top (change to row for side-by-side) */
   align-items: center; /* Center elements horizontally */
   margin: 0 auto; /* Center the container horizontally */
-  width: 80%; /* Set a maximum width for the container */
+  width: 100%; /* Set a maximum width for the container */
   
-  outline: 10px dotted red;
+
 
 }
 .about h2{
@@ -546,16 +573,51 @@ header nav a{
   justify-content: center;
 }
 .text{
-  display: flex; /* Make the elements display side-by-side */
+  
   
   padding: 1rem;
   font-size: 20px;
 }
 .text p{
-  flex-flow: column wrap;
-   flex-basis:50%;
-  flex: 1; /* Make paragraphs take up equal space */
+  justify-content: center;
+  align-items: center;
+  
+   
+  
 }
+
+
+
+.map{ 
+  position: relative; 
+  padding-bottom: 75%; 
+  height: 0; 
+  overflow: hidden; 
+  max-width: 100%;
+  
+   }
+  .map .iframe { 
+  position: absolute; 
+  top: 0; 
+  left: 0;
+  
+  width: 100%; 
+  height: 100%;
+   }
+
+   
+  .faq-content p{
+    font-size: 20px;
+    
+  }
+
+
+
+
+
+
+
+
 
    }
 
@@ -570,10 +632,34 @@ header nav a{
       padding:.5rem 1.5rem;
       width:320px;
     }
-    header nav a{
-      width: 200px;
+    a.header-nav{
+      width: 300px;
       padding-left: 10px;
     }
+    .review-caption p{
+      font-size: 25px;
+}
+
+
+    .map{ 
+      position: relative; 
+      padding-bottom: 56.25%; 
+      top:80px;
+      left:100px;
+      bottom:80px;
+      height: 0; 
+      overflow: hidden; 
+      max-width: 80%;
+      
+       }
+      .iframe { 
+      position: absolute; 
+      top: 0; 
+      left: 0;
+      width: 70%; 
+      height: 70%;
+       }
+    
 
 
 
